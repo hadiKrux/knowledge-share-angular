@@ -1,0 +1,15 @@
+<div style="padding: 50px">
+  <p>Memory leak: Main component</p>
+
+  <br />
+  <br />
+
+  <button class="button" (click)="onToggle()">Toogle child component</button>
+  <button class="button" (click)="unsubInterval()">Unsubscribe interval</button>
+  <br />
+  <br />
+
+  @if (isVisible()) {
+  <ka-feature-memory-leak-child></ka-feature-memory-leak-child>
+  }
+</div>

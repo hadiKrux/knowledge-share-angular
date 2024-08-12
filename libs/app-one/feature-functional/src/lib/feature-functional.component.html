@@ -1,0 +1,8 @@
+<div style="padding: 50px">
+  <ka-feature-presentational
+    [items]="menuItems()"
+    [activeItem]="activeMenuItem()"
+    styleClass="nav-center"
+    (onItemClickEvent)="handleItemClickEvent($event)"
+  />
+</div>

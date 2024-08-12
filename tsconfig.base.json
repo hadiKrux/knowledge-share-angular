@@ -14,7 +14,27 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "strictPropertyInitialization": false,
+    "paths": {
+      "@ka/app-one-data-access": ["libs/app-one/data-access/src/index.ts"],
+      "@ka/feature-child": ["libs/app-one/feature-child/src/index.ts"],
+      "@ka/feature-functional": [
+        "libs/app-one/feature-functional/src/index.ts"
+      ],
+      "@ka/feature-memory-leak": [
+        "libs/app-one/feature-memory-leak/src/index.ts"
+      ],
+      "@ka/feature-memory-leak-child": [
+        "libs/app-one/feature-memory-leak-child/src/index.ts"
+      ],
+      "@ka/feature-presentational": [
+        "libs/app-one/ui/feature-presentational/src/index.ts"
+      ],
+      "@ka/feature-rxjs": ["libs/app-one/feature-rxjs/src/index.ts"],
+      "@ka/feature-signal": ["libs/app-one/feature-signal/src/index.ts"],
+      "@ka/feature-store": ["libs/app-one/feature-store/src/index.ts"],
+      "@ka/shared-data-access": ["libs/shared/data-access/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

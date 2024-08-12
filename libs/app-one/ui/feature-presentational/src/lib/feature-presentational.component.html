@@ -1,0 +1,13 @@
+@if (items().length > 0) {
+<!-- Menu -->
+<ul class="nav nav-primary" [ngClass]="styleClass()">
+  @for (item of items(); track item.name) {
+  <li class="nav-item" [class.active]="activeItem()?.name === item.name">
+    <a [href]="item.url" class="nav-link" (click)="onItemClick($event, item)">
+      {{ item.name }}
+    </a>
+  </li>
+  }
+</ul>
+<!-- Menu -->
+}

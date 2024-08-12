@@ -1,0 +1,7 @@
+<p>Memory leak child component</p>
+
+<ul style="display: flex; flex-direction: column-reverse">
+  @for (item of data(); track $index) {
+  <li>Data received {{ item }}</li>
+  }
+</ul>
